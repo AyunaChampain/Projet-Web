@@ -13,10 +13,44 @@ body {
 
 .info-block img {
   height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
+  display : block;
 }
 
 .info-text {
   flex: 1;
   text-align: justify;
+}
+
+.sticky-image-wrapper {
+  position: fixed;
+  bottom: 15px; /* même base que ton bouton */
+  left: 83%;
+  z-index: 1; /* dessous le bouton */
+}
+
+.sticky-img {
+  height: 150px; /* ajuste selon ta déco */
+  width: auto;
+
+}
+
+.sticky-wrapper button {
+  position: fixed;
+  bottom: 50px;
+  left: 83%;
+  z-index: 2; /* au-dessus de l'image */
+}
+
+h1
+{
+    text-align: center;
+}
+
+#liens
+{
+    text-align: center;
 }
