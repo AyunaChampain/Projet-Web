@@ -166,3 +166,17 @@ img {
   margin-left: 0;
 }
 
+.info-img {
+  height: 150px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0d0;
+  font-size: 0.9em;
+}
