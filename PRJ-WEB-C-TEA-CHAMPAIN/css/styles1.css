@@ -1,7 +1,26 @@
+body {
+    margin: 0; /* Remove default spacing */
+    height: 100vh; /* Make body fill the viewport */
+    background: url('../img/plage.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make it cover the whole page */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
-body{
-    background-color: #fafadc;
-    justify-content:center;
+/* Overlay for transparency */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url('../img/plage.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Ensure it's behind everything */
 }
 
 h1, h2 {
@@ -187,3 +206,31 @@ img {
   {
      font-size : 30px;
   }
+
+
+@media only screen and (min-width: 600px) and (max-width : 1000px) {
+  .info-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .info-text {
+    padding: 10px 0;
+    text-align: justify;
+  }
+
+  .info-block img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+
+
+html
+{
+  scroll-behavior: smooth;
+}
