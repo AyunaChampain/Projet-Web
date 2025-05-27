@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ODDSteve - À propos</title>
+  <link rel="stylesheet" href="../css/styles1.css">
+</head>
+
+<header>
+    <h1>ODDSTEVE</h1>
+    <nav>
+        <a href="./accueil.html">Accueil</a>
+        <a href="info.html">Informations</a>
+        <a href="./apropos.html">Liens utiles</a>
+        <a href="./quiz.html">Quiz</a>
+        <a href="./apropos.html">A propos</a>
+    </nav>
+
+</header>
+<body>
+
+ 
+    <fieldset class="quiz">
+        <legend>Quiz time !</legend>
+        <ul>
+                <li>
+                    <label for="q1r1">Combien il y a t-il d'espèces de requins en danger ?&nbsp;:</label>
+                    <div>
+                        <input type="radio" id="q1r1" name="especes" value="def1" checked>
+                        <label for="q1r1">167</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="q1r2" name="especes" value="def2">
+                        <label for="q1r2">3millions</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="q1r3" name="especes" value="def3">
+                        <label for="q1r3">245</label>
+                    </div>
+                </li>
+
+                <li>
+                    <label for="q2r1">Quel est l'objectif principal de la Green IT&nbsp;:</label>
+                    <div>
+                        <input type="radio" id="q2r1" name="greenit_obj" value="obj1" checked>
+                        <label for="q2r1">Réduire la consommation d'énergie</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="q2r2" name="greenit_obj" value="obj2">
+                        <label for="q2r2">Minimiser les déchets électroniques</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="q2r3" name="greenit_obj" value="obj3">
+                        <label for="q2r3">Optimiser les performances des appareils électroniques</label>
+                    </div>
+
+                </li>
+                <li>
+                <label for="exemple">Donnez un exemple de pratique Green IT&nbsp;:</label>
+                <input type="text" id="exemple" name="exempleIT">
+                </li>
+            </ul>
+            <button id="bouton"class="container" type="submit" onclick="SubmitQuiz()">Envoyer</button>
+    
+        </fieldset>
+
+  <footer>
+    ©️2025 Tea Julia, Champain Ayuna — Tous droits réservés.
+    <a href="info.html">Découvre les espèces !</a>
+  </footer>
+
+</body>
+</html>
