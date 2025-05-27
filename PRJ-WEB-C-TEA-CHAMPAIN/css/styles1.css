@@ -172,3 +172,12 @@ img {
 }
 
 
+  .quiz
+  {
+    border-color: aqua;
+  }
+
+  .quiz label
+  {
+    color: rgb(4, 4, 76);
+  }
