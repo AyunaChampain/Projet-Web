@@ -175,9 +175,15 @@ img {
   .quiz
   {
     border-color: aqua;
+    background-color:#f1e8a4;
   }
 
   .quiz label
   {
     color: rgb(4, 4, 76);
+  }
+
+  .quiz legend
+  {
+     font-size : 30px;
   }

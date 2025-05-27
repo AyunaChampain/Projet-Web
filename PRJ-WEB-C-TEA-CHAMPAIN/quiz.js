@@ -56,11 +56,33 @@ function SubmitQuiz()
     }
 
 
+    if (score < 13)
+    {
+        var message = "Presque... Peut-être devrais tu rejeter un oeil à la page d'informations ?" ;
+    }
 
-    // ... le reste du code de calcul du score ...
+    if (score >= 13 && score <18)
+    {
+        var message = "Pas mal ! Tu pourrais jeter un oeil à la page d'informations pour t'améliorer !" ;
+    }
+
+    if (score >=18 && score <30)
+    {
+        var message = "Génial ! Jette un oeil aux informations pour progresser encore plus !" ;
+    }
+
+    if (score >=30 &&  score != 36) 
+    {
+        var message = "In-croy-able !" ;
+    }
+
+    if (score == 36) 
+    {
+        var message = "Le sauveur des océans est arrivé !" ;
+    }
 
 // Affichage du score
-document.getElementById("resultat").textContent = `Votre score est de ${score} sur 36 !`;
+document.getElementById("resultat").textContent = `Ton score est de ${score} sur 36 ! ${message}`;
 
 
 
