@@ -194,7 +194,7 @@ img {
   .quiz
   {
     border-color: aqua;
-    background-color:#f1e8a4;
+    background-color:#ebe7cc;
   }
 
   .quiz label
@@ -233,4 +233,25 @@ img {
 html
 {
   scroll-behavior: smooth;
+}
+
+
+#warning
+{
+  font-size:x-large;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#warning a
+{
+  color :rgb(4, 4, 76);
+  text-decoration:none;
+  font-style: oblique;
+}
+
+#warning a:hover
+{
+  color:#ff490c;
 }
