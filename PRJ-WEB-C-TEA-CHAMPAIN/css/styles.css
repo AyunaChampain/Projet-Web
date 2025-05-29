@@ -67,6 +67,7 @@ header nav {
   margin-top: 30px;
 }
 
+
 header a {
   background-color: coral;
   border-radius: 10px;
@@ -79,7 +80,8 @@ header a {
 }
 
 header a:hover {
-  background-color: #ff7a4e;
+  background-color: #090808;
+
 }
 
 footer {
