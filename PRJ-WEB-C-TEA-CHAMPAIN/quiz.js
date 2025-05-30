@@ -12,13 +12,13 @@ function SubmitQuiz()
     }
 
     let q2 = document.querySelector('#nom').value.toLowerCase();
-    let keywords = ['steve']; // Mots-clés à rechercher
+    let keywords = ['steve'];
     if (keywords.some(keyword => q2.includes(keyword))) {
         score += 4;
     }
 
     let q3 = document.querySelector('#color').value.toLowerCase();
-    let keywords2 = ['orange']; // Mots-clés à rechercher
+    let keywords2 = ['orange'];
 
 
     if (keywords2.some(keyword => q3.includes(keyword))) {
@@ -81,7 +81,7 @@ function SubmitQuiz()
         var message = "Le sauveur des océans est arrivé !" ;
     }
 
-// Affichage du score
+
 document.getElementById("resultat").textContent = `Ton score est de ${score} sur 36 ! ${message}`;
 
 
