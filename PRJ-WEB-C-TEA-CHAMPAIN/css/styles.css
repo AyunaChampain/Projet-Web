@@ -126,18 +126,14 @@ div{
   margin: 40px 10%;
   padding: 20px;
   background-color: #fffef4;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;  
 }
-img:hover{
-  
-  border-radius: 150px;
-  padding: 8px 16px;
-  margin: 0 8px;
-  background-color: white;
-  height: 250px;
-  width: 215px;
+
+#steveaccueil:hover{
+  transform: scale(1.55);
   transition: transform 0.3s ease;
+  
+  
 }
 img{
   height: 200px;
@@ -155,4 +151,8 @@ img{
 #myImage:hover
 {
   background-color:#f0eac000;
+}
+
+#otto-shadow-dom-id {
+  display: none !important;
 }
