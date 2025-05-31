@@ -3,16 +3,16 @@
 
 
 body {
-    margin: 0; /* Remove default spacing */
-    height: 100vh; /* Make body fill the viewport */
+    margin: 0; 
+    height: 100vh; 
     background: url('../img/plage.jpg') no-repeat center center fixed;
-    background-size: cover; /* Make it cover the whole page */
+    background-size: cover; 
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-/* Overlay for transparency */
+
 body::before {
     content: '';
     position: fixed;
@@ -24,10 +24,8 @@ body::before {
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
         url('../img/plage.jpg') no-repeat center center;
     background-size: cover;
-    z-index: -1; /* Ensure it's behind everything */
+    z-index: -1; 
 }
-
-
 
 
 h1, h2 {
@@ -118,7 +116,7 @@ header {
   text-align: center;
   color: aliceblue;
 }
-div{
+.pageaccueil{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -131,8 +129,7 @@ div{
 
 #steveaccueil:hover{
   transform: scale(1.55);
-  transition: transform 0.3s ease;
-  
+  transition: transform 0.3s ease;  
   
 }
 img{
@@ -155,4 +152,46 @@ img{
 
 #otto-shadow-dom-id {
   display: none !important;
+}
+
+.vinyl-container {
+  text-align: center;
+  margin: 40px 10%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#vinyl {
+  width: 700px;
+  height: auto;
+  transition: transform 0.5s linear;
+  margin: 20px auto;
+}
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#playButton {
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #ea9897;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#playButton:hover {
+  background-color: #dd6c6a;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

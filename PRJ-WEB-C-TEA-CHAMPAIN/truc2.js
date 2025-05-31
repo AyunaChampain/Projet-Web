@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load", function () {
   const bubbles = document.querySelectorAll(".bubble");
   const popSound = new Audio("../audio/pop.mp3.mp3");
 
@@ -53,4 +53,4 @@ window.onload = function () {
       }, 300);
     });
   });
-};
+});
