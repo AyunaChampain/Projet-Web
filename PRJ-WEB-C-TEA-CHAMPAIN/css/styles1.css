@@ -32,6 +32,7 @@ h1 {
   text-align: center;
   font-size: 2.8em;
   margin-top: 30px;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -76,7 +77,7 @@ h2 {
   display: inline-block;
   margin: 0 15px;
   padding: 8px 16px;
-  background-color: coral;
+  background-color: #82d7f5;
   border-radius: 8px;
   color: white;
   text-decoration: none;
@@ -86,7 +87,7 @@ h2 {
 
 
 .link:hover {
-  background-color: #ff7a4e;
+  background-color: #e98d6f;
 }
 
 .info-block {
@@ -102,16 +103,17 @@ h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .info-help {
-  
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  display:block;
   margin: 40px 10%;
   text-align: center;
   padding: 20px;
   background-color: #fffef4;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+.info-help h2:hover{
+  transform: scale(1.1);
 }
 
 .info-block img {
@@ -221,6 +223,9 @@ img {
      font-size : 30px;
   }
 
+  #help{
+    background-color: rgba(130, 215, 245, 0.3);
+  }
 
 @media only screen and (min-width: 600px) and (max-width : 1000px) {
   .info-block {
