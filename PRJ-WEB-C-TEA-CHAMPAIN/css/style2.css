@@ -76,7 +76,7 @@ h2 {
 
 .link {
   display: inline-block;
-  margin: 0 15px;
+  margin-top: 20px;
   padding: 8px 16px;
   background-color: coral;
   border-radius: 8px;
@@ -88,7 +88,7 @@ h2 {
 
 
 .link:hover {
-  background-color: #ff7a4e;
+  background-color: #75b3d9;
 }
 
 .info-block {

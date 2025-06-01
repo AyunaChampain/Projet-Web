@@ -73,19 +73,21 @@ h2 {
   margin: 20px 0;
 }
 
+#git, #bouton,
 .link {
   display: inline-block;
   margin: 0 15px;
   padding: 8px 16px;
   background-color: #82d7f5;
   border-radius: 8px;
+  border:none;
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-
+#git:hover,
 .link:hover {
   background-color: #e98d6f;
 }
@@ -139,7 +141,7 @@ h2 {
 .sticky-image-wrapper {
   position: fixed;
   bottom: 15px;
-  left: 83%;
+  left: 90%;
   z-index: 1;
 }
 
@@ -205,11 +207,12 @@ img {
   object-position: center;
 }
 
-
   .quiz
   {
     border-color: aqua;
-    background-color:#ebe7cc;
+    margin: 40px;
+    border-radius: 15px;
+    background-color: rgba(212, 242, 253, 0.85);
   }
 
   .quiz label
@@ -220,6 +223,12 @@ img {
   .quiz legend
   {
      font-size : 30px;
+  }
+
+  #resultat{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    margin-left: 5%;
   }
 
   #help{
