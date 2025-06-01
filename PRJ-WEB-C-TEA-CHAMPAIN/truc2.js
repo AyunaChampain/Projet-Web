@@ -9,7 +9,6 @@ window.addEventListener("load", function () {
     bubble.style.transition = "transform 0.3s ease, opacity 0.3s ease";
     bubble.style.cursor = "pointer";
 
-    // Extraire la position de départ depuis le style
     let x = parseFloat(bubble.style.left) || window.innerWidth - parseFloat(bubble.style.right);
     let y = parseFloat(bubble.style.top) || 100;
 
